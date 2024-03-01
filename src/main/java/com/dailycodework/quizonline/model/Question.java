@@ -7,9 +7,6 @@ import lombok.Setter;
 
 import java.util.List;
 
-/**
- * @author Simpson Alfred
- */
 @Getter
 @Setter
 @Entity
@@ -23,10 +20,8 @@ public class Question {
     @NotBlank
     private String questionType;
 
-
     @ElementCollection
     private List<String> choices;
-
 
     @ElementCollection
     private List<String> correctAnswers;
